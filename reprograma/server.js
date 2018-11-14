@@ -8,7 +8,7 @@ const server = http.createServer((req, res) =>{
     res.end()
   }
   if (req.url === '/reprograma'){
-    res.whrite(JSON.stringify([1, 2, 3]))
+    res.write(JSON.stringify([1, 2, 3]))
     res.end()
   }
 })
