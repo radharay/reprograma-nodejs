@@ -14,7 +14,7 @@ const server = http.createServer((req, res) =>{
 })
 
 // server.listen(3000)
-// console.log('Escutando na porta 02 3000...')
+// console.log('Escutando na porta 3000...')
 
 //Ouvindo um evento pre-existente do módulo
 
@@ -22,5 +22,10 @@ server.on('connection', ()=>{ // connection emite quando uma página é carregad
   console.log('Página carregada')
 })
 
+// server.on('close', ()=>{
+//   console.log('Encerrando a página')
+// })
+
 server.listen(3000)
 console.log('Escutando na porta 3000...')
+
